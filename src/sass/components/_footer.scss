@@ -1,0 +1,53 @@
+@import "../variables";
+footer {
+  padding: 20px 0 20px 0;
+  .header-col {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    img {
+      width: 101px;
+    }
+    .main-p {
+      position: relative;
+      top: 20px;
+      span {
+        color: rgb(97, 42, 132);
+        cursor: pointer;
+      }
+    }
+  }
+  .col-lg-3 {
+    margin-top: 47px;
+    h5 {
+      font-size: 14px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0 !important;
+      li {
+        a {
+          text-decoration: none;
+          color: rgb(160, 137, 174);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  footer {
+    .col-lg-3 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 356px) {
+  footer {
+    .header-col {
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+  }
+}

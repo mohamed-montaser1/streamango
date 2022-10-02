@@ -1,0 +1,116 @@
+@import "../variables";
+
+.monetize-features {
+  background-color: $section_bg;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  & > h2 {
+    margin-bottom: 10px !important;
+  }
+  & > p {
+    text-align: center;
+    color: #a0a0a0;
+    margin-bottom: 80px;
+  }
+  .container {
+    margin-bottom: 20px;
+    .row {
+      .col-sm-12 {
+        .card {
+          transition: $main_transition;
+          border-radius: 0 !important;
+          justify-content: center;
+          min-height: 225px;
+          overflow: hidden;
+          .card-cap {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 0 20px;
+            svg {
+              width: 50px;
+              height: 50px;
+              g {
+                path {
+                  transition: $main_transition;
+                }
+              }
+            }
+            h3 {
+              font-size: 17px;
+              color: $main_color;
+            }
+          }
+          .card-disc {
+            text-align: center;
+            padding: 0 35px 30px;
+            height: 110px;
+            transition: $main_transition;
+          }
+          &:hover {
+            background-color: $main_color;
+            .card-cap {
+              svg {
+                g {
+                  path {
+                    fill: white !important;
+                  }
+                }
+                .st0 {
+                  fill: white;
+                }
+                .st1 {
+                  fill: white;
+                }
+              }
+              h3 {
+                color: white;
+              }
+            }
+            .card-disc {
+              color: #a0a0a0;
+            }
+          }
+          &:hover {
+            & > .card-disc {
+              bottom: 0px;
+            }
+            & > .card-cap {
+              top: 6px;
+            }
+            & > .card-cap {
+              top: 6px;
+              transform: translate(-50%);
+            }
+          }
+          & > .card .card-cap {
+            transform: translate(-50%);
+          }
+        }
+
+        .card-cap {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          transition: $main_transition;
+        }
+        .card-disc {
+          bottom: -150px;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .monetize-features {
+    .card:nth-child(2) {
+      margin: 20px 0;
+    }
+  }
+}

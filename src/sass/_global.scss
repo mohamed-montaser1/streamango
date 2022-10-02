@@ -1,0 +1,38 @@
+@import "./variables";
+@font-face {
+  font-family: "font-bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "font-reg";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "font-light";
+  src: url("../fonts/Montserrat-Light.ttf");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+section > h2 {
+  text-align: center;
+  color: $dark_color;
+  margin-bottom: 60px;
+}
+
+.card {
+  border: none !important;
+}
+
+section, footer {
+  overflow-y: hidden;
+}

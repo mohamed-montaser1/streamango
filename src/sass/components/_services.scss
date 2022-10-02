@@ -1,0 +1,42 @@
+@import "../variables";
+
+.services {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  .card {
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      .icon {
+        img {
+          transform: scale(0.9);
+        }
+      }
+    }
+    .icon {
+      img {
+        transition: $main_transition;
+        width: 223px;
+        height: auto;
+      }
+    }
+    .text {
+      h3 {
+        color: $dark_color;
+        font-size: 17px;
+      }
+      p {
+        color: #a0a0a0;
+        font-size: 15px;
+        padding: 18px 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    margin: 196px 0;
+  }
+}
